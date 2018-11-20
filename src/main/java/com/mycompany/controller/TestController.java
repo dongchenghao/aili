@@ -26,10 +26,10 @@ public class TestController implements SimpleGenericEntityController<TestEntity,
         testService.saveOrUpdate(testEntity);
     }
 
-    @PostMapping()
-    public void save(@RequestBody TestEntity testEntity){
-        testService.saveOrUpdate(testEntity);
-    }
+//    @PostMapping()
+//    public void save(@RequestBody TestEntity testEntity){
+//        testService.saveOrUpdate(testEntity);
+//    }
 
     @DeleteMapping()
     public void delete(@RequestParam  String id){
