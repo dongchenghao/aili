@@ -1,0 +1,28 @@
+server:
+  port: 8080
+
+spring:
+  aop:
+      auto: true
+#  datasource:
+#     type: com.alibaba.druid.pool.DruidDataSource
+#     driver-class-name : com.mysql.jdbc.Driver
+#     url : jdbc:mysql://10.86.235.67:3306/test?useSSL=false&useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false
+#     username : root
+#     password : gxxj
+
+hsweb:
+  app:
+    name: myproject
+    version: 1.0.0
+
+logging:
+  level:
+     org.hswebframework.web: DEBUG
+     org.hswebframework.web.cache: WARN
+     org.apache.ibatis: DEBUG
+     org.mybatis: DEBUG
+
+mybatis:
+    mapper-locations: classpath:com/mycompany/dao/mybatis/**/*.xml
+    type-aliases-package: com.mycompany.entity
