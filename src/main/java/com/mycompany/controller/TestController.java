@@ -33,6 +33,7 @@ public class TestController implements SimpleGenericEntityController<TestEntity,
 
     @DeleteMapping()
     public void delete(@RequestParam  String id){
+        //测试
         testService.deleteByPk(id);
     }
 }
